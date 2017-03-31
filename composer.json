@@ -26,9 +26,17 @@
     "php": "^5.6 || ^7.0"
   },
   "autoload": {
-    "classmap": [
-      "src/"
-    ]
+    "psr-4": {
+      "PharIo\\Version\\" : "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PharIo\\Version\\Test\\" : [
+        "tests/Integration",
+        "tests/Unit"
+      ]
+    }
   }
 }
 
